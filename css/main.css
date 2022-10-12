@@ -1,49 +1,89 @@
-ul,ol,input{
+ul, ol, input, p {
 	margin: 0;
 	padding: 0;
 }
-.wrapper{
-	margin: 0 ;
-	padding: 0;
-	background-image: url("/images/datamgmt.jpg");
+
+input:focus {
+	outline: none;
 }
 
-.main-section{
+.wrapper {
+	margin: 0;
+	background-image: url("/images/datamgmt.jpg");
+	padding: 10px;
+	height: 100vh;
+}
+
+.chat-header {
+	color: ghostwhite;
+	border: 2px solid ghostwhite;
+	margin-bottom: 30px;
+
+}
+
+.heading {
+	padding-left: 30px;
+}
+
+.main-section {
 	font-size: 16px;
 	font-family: Arial sans-serif;
+
 }
-.main-section-chat{
+
+.main-section-chat {
 	margin: 0 auto;
-	width: 600px;
-	height: 800px;
-	background-color: ghostwhite;
-	border: 2px solid black;
-	border-radius: 10px;
-	position: relative;
-}
-.main-section-chat-list{
 	padding: 50px;
-	list-style: none;
+	border: 2px solid ghostwhite;
+
 }
-.main-section-chat-list-item{
+
+.main-section-chat-list {
+	list-style: none;
+
+}
+
+.main-section-chat-list-item {
+	position: relative;
+	/*box-shadow: ;*/
+}
+
+.main-section-chat-list-item p {
 	margin-bottom: 30px;
 	border: 1px solid grey;
-	padding: 15px 5px;
+	padding: 20px 10px;
 	background-color: white;
-	border-radius: 10px;
-	/*box-shadow: ;*/
+	font-size: 20px;
+}
+
+.remove-button {
+	background: url("/images/close.jpg");
+	background-size: cover;
+	position: absolute;
+	right: -25px;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	background-color: inherit;
 
 }
-.message{
+
+.chat-form {
+	display: flex;
+	flex-direction: row;
+}
+
+.message {
 	padding: 10px 5px;
 	border: 1px solid grey;
-	border-radius: 10px;
+	flex-grow: 1;
 }
 
-.chat-form{
-	padding: 25px;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	left: 0;
+
+.submit-button {
+	padding: 10px 20px;
+	margin-left: 15px;
+	border: 1px solid grey;
+
+
 }
