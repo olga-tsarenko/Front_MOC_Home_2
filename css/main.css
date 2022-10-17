@@ -3,7 +3,7 @@ ul, ol, input, p {
 	padding: 0;
 }
 
-input:focus {
+textarea:focus {
 	outline: none;
 }
 
@@ -12,13 +12,13 @@ input:focus {
 	background-image: url("/images/datamgmt.jpg");
 	padding: 10px;
 	height: 100vh;
+	box-sizing: border-box;
 }
 
 .chat-header {
 	color: ghostwhite;
 	border: 2px solid ghostwhite;
 	margin-bottom: 30px;
-
 }
 
 .heading {
@@ -26,7 +26,7 @@ input:focus {
 }
 
 .main-section {
-	font-size: 16px;
+	font-size: 20px;
 	font-family: Arial sans-serif;
 
 }
@@ -35,15 +35,23 @@ input:focus {
 	margin: 0 auto;
 	padding: 50px;
 	border: 2px solid ghostwhite;
+	height: calc(100vh - 240px);
+	display: flex;
+	flex-direction: column;
 
 }
 
 .main-section-chat-list {
 	list-style: none;
+	flex-grow: 1;
+	max-height: 684px;
+	overflow: auto;
+	margin-bottom: 25px;
 
 }
 
 .main-section-chat-list-item {
+	padding-right: 25px;
 	position: relative;
 	/*box-shadow: ;*/
 }
@@ -57,15 +65,15 @@ input:focus {
 }
 
 .remove-button {
-	background: url("/images/close.jpg");
+	background: url("/images/123.svg");
 	background-size: cover;
 	position: absolute;
-	right: -25px;
+	right: 0;
 	top: 0;
 	width: 20px;
 	height: 20px;
 	background-color: inherit;
-
+	cursor: pointer;
 }
 
 .chat-form {
@@ -74,9 +82,11 @@ input:focus {
 }
 
 .message {
-	padding: 10px 5px;
+	padding: 20px 10px;
 	border: 1px solid grey;
 	flex-grow: 1;
+	font-size: 20px;
+	font-family: Arial sans-serif;
 }
 
 
@@ -84,6 +94,5 @@ input:focus {
 	padding: 10px 20px;
 	margin-left: 15px;
 	border: 1px solid grey;
-
-
+	font-size: 25px;
 }
